@@ -9,6 +9,10 @@
                "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
+; custom place to save customizations
+(setq custom-file "~/.emacs.d/yipstar/custom.el")
+(when (file-exists-p custom-file) (load custom-file))
+
 ;; my global customizations
 (load "yipstar/global")
 
