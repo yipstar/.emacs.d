@@ -1,13 +1,16 @@
-;; Get rid of the Toolbar, the Menubar, and the Scrollbar.
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-;;(if (fboundp 'menu-bar-mode) (menu-bar-mode 1))
+;; setup load paths
+(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/vendor")
 
-(setenv "SHELL" "/bin/bash")
-(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
-
+;; setup package manager
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . 
                "http://marmalade-repo.org/packages/") t)
 (package-initialize)
+
+;; my global customizations
+(load "yipstar/global")
+
+(setenv "SHELL" "/bin/bash")
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
