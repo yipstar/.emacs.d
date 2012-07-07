@@ -16,12 +16,6 @@
 ;; What does this do?
 (setq line-move-visual nil)
 
-;; Enable keybindings for moving through windows with ctrl-->
-(windmove-default-keybindings)
-
-;; Turn on winner-mode, C-c left and C-c right to switch through window configurations
-(winner-mode 1)
-
 ;; Turn on syntax highlighting everywhere available
 (global-font-lock-mode 1)
 
