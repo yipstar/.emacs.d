@@ -4,7 +4,7 @@
 ;; Turn on winner-mode, C-c left and C-c right to switch through window configurations
 (winner-mode 1)
 
-;; use switch-window to take over C-o and use numbers to choose the buffer
+;; use switch-window to take over C-x o and use numbers to choose the buffer
 (require 'switch-window-autoloads)
 (require 'switch-window)
 

@@ -19,7 +19,7 @@
 ;;   "A list of packages to ensure are installed at launch.")
 
 (defvar yipstar-packages
-  '(ack-and-a-half twilight-theme zenburn-theme rinari switch-window)
+  '(ack-and-a-half twilight-theme zenburn-theme rinari switch-window scss-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun yipstar-packages-installed-p ()
