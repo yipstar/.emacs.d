@@ -15,5 +15,8 @@
 ;; color theme
 (load "yipstar/theme")
 
+;; modes
+(load "yipstar/modes")
+
 (setenv "SHELL" "/bin/bash")
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
