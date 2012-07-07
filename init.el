@@ -15,6 +15,9 @@
 ;; color theme
 (load "yipstar/theme")
 
+;; custom functions
+(load "yipstar/defuns")
+
 ;; modes
 (load "yipstar/modes")
 
