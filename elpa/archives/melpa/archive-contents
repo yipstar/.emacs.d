@@ -6,7 +6,7 @@
 		 [(20111231)
 		  nil "Unfold CSS-selector-like expressions to markup [source: github]" single])
  (zenburn-theme .
-		[(20120706)
+		[(20120708)
 		 nil "A low contrast color theme for Emacs. [source: github]" single])
  (zen-and-art-theme .
 		    [(20120622)
@@ -36,7 +36,7 @@
 	[(20120706)
 	 nil "Writable grep buffer and apply the changes to files [source: github]" tar])
  (websocket .
-	    [(20120702)
+	    [(20120707)
 	     nil "Emacs WebSocket client [source: github]" single])
  (w3m .
       [(20120702)
@@ -62,6 +62,9 @@
  (underwater-theme .
 		   [(20120615)
 		    nil "A gentle, deep blue color theme [source: github]" single])
+ (typing .
+	 [(20120709)
+	  nil "The Typing Of Emacs [source: wiki]" single])
  (twittering-mode .
 		  [(20120506)
 		   nil "Major mode for Twitter [source: github]" tar])
@@ -102,7 +105,7 @@
 	   [(20120525)
 	    nil "emulate surround.vim from Vim [source: github]" single])
  (sunrise-commander .
-		    [(20120705)
+		    [(20120708)
 		     nil "two-pane file manager for Emacs based on Dired and inspired by MC [source: github]" tar])
  (stylus-mode .
 	      [(20120501)
@@ -167,7 +170,7 @@
 	    [(20120409)
 	     nil "Intelligent tab completion and indentation. [source: github]" single])
  (smart-mode-line .
-		  [(20120628)
+		  [(20120709)
 		   nil "A color coded smart mode-line. [source: github]" single])
  (slime-ritz .
 	     [(20120612)
@@ -253,7 +256,7 @@
 		     [(20120428)
 		      nil "Highlight nested parens, brackets, braces a different color at each depth. [source: github]" single])
  (quickrun .
-	   [(20120613)
+	   [(20120707)
 	    nil "Run commands quickly [source: github]" single])
  (quick-buffer-switch .
 		      [(20120704)
@@ -387,11 +390,14 @@
 	     ((prelude-programming
 	       (1 0 0)))
 	     "Emacs Prelude: cc-mode configuration. [source: github]" single])
+ (powershell .
+	     [(20120709)
+	      nil "run powershell as an inferior shell in emacs [source: wiki]" single])
  (powerline .
-	    [(20120705)
+	    [(20120709)
 	     nil "fancy statusline [source: wiki]" single])
  (popwin .
-	 [(20120529)
+	 [(20120707)
 	  nil "Popup Window Manager. [source: github]" single])
  (popup .
 	[(20120331)
@@ -490,7 +496,7 @@
 		[(20120225)
 		 nil "Emacs Major mode for Markdown-formatted text files [source: github]" single])
  (mark-multiple .
-		[(20120706)
+		[(20120708)
 		 nil "A library that sorta lets you mark several regions at once [source: github]" tar])
  (magithub .
 	   [(20120209)
@@ -529,6 +535,9 @@
  (less-css-mode .
 		[(20111128)
 		 nil "Major mode for editing LESS CSS files (lesscss.org) [source: github]" single])
+ (legalese .
+	   [(20100119)
+	    nil "Add legalese to your program files [source: wiki]" single])
  (latex-pretty-symbols .
 		       [(20111011)
 			nil "Display many latex symbols as their unicode counterparts [source: hg]" single])
@@ -602,7 +611,7 @@
 		      [(20110817)
 		       nil "highlight the word the point is on [source: github]" single])
  (icicles .
-	  [(20120705)
+	  [(20120708)
 	   nil "Minibuffer input completion and cycling. [source: wiki]" tar])
  (ibuffer-vc .
 	     [(20111221)
@@ -649,7 +658,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [source: github]" single])
  (helm .
-       [(20120706)
+       [(20120709)
 	nil "Helm is an Emacs incremental and narrowing framework [source: github]" tar])
  (haskell-mode .
 	       [(20120704)
@@ -666,6 +675,9 @@
  (graphviz-dot-mode .
 		    [(20120627)
 		     nil "Mode for the dot-language used by graphviz (att). [source: github]" single])
+ (google-this .
+	      [(20120629)
+	       nil "A set of functions and bindings to google under point. [source: github]" single])
  (google-maps .
 	      [(20111110)
 	       nil "Access Google Maps from Emacs [source: git]" tar])
@@ -805,7 +817,7 @@
 	[(20120118)
 	 nil "running leiningen commands from emacs [source: github]" single])
  (ein .
-      [(20120705)
+      [(20120708)
        ((websocket
 	 (0 9)))
        "Emacs IPython Notebook [source: github]" tar])
@@ -828,11 +840,14 @@
        [(20081128)
 	nil "simplified find-file, revert-file, save-buffer interface [source: wiki]" single])
  (dired+ .
-	 [(20120626)
+	 [(20120709)
 	  nil "Extensions to Dired. [source: wiki]" single])
  (diminish .
 	   [(20091203)
 	    nil "Diminished modes are minor modes with no modeline display [source: github]" single])
+ (diff-hl .
+	  [(20120708)
+	   nil "VC diff fringe highlighting [source: github]" single])
  (delim-kill .
 	     [(20100517)
 	      nil "Kill text between delimiters. [source: github]" single])
@@ -927,6 +942,9 @@
  (bitlbee .
 	  [(20080417)
 	   nil "Help get Bitlbee (http://www.bitlbee.org) up and running [source: git]" single])
+ (backup-walker .
+		[(20110920)
+		 nil "quickly traverse all backups of a file [source: github]" single])
  (autopair .
 	   [(20110508)
 	    nil "Automagically pair braces and quotes like TextMate [source: svn]" single])
