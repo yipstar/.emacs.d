@@ -23,6 +23,8 @@
   (other-window 2)
   (split-window-vertically))
 
+(global-set-key "\C-c\C-f" '4-equal-window-view)
+
 (defun 3by2-window-view ()
   "split current-frame into 2 by 3 equally sized windows"
   (interactive)
@@ -38,6 +40,8 @@
   (other-window 2)
   (split-window-vertically))
 
+(global-set-key "\C-c\C-s" '3by2-window-view)
+
 (defun 3by2mod4-window-view ()
   "split current-frame into 8 windows (irc setup)"
   (interactive)
@@ -46,3 +50,5 @@
   (split-window-vertically)
   (other-window 2)
   (split-window-vertically))
+
+(global-set-key "\C-c\C-i" '3by2mod4-window-view)
