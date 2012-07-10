@@ -12,11 +12,11 @@
 ;; my global customizations
 (load "yipstar/global")
 
-;; color theme
-(load "yipstar/theme")
-
 ;; custom functions
 (load "yipstar/defuns")
+
+;; color theme
+(load "yipstar/theme")
 
 ;; modes
 (load "yipstar/modes")
