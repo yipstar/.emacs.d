@@ -8,4 +8,7 @@
 (require 'switch-window-autoloads)
 (require 'switch-window)
 
-
+;; e2wm
+(require 'window-layout-autoloads)
+(require 'e2wm-autoloads)
+(require 'e2wm)
