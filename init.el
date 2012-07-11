@@ -24,5 +24,8 @@
 ;; window management
 (load "yipstar/window")
 
+;; bindings
+(load "yipstar/bindings")
+
 (setenv "SHELL" "/bin/bash")
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
