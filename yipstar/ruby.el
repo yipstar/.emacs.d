@@ -25,3 +25,6 @@
 (setq auto-mode-alist (cons '("\\.ru" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.gemspec" . ruby-mode) auto-mode-alist))
 
+;; rvm
+(require 'rvm-autoloads)
+(rvm-use-default)
