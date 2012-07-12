@@ -13,6 +13,9 @@
 (require 'e2wm-autoloads)
 (require 'e2wm)
 
+;; maxframe
+(require 'maxframe-autoloads)
+
 ;; Some common window split configs.
 (defun 4-equal-window-view ()
   "split current-frame into four equally sized windows"

@@ -6,7 +6,7 @@
 		 [(20111231)
 		  nil "Unfold CSS-selector-like expressions to markup [source: github]" single])
  (zenburn-theme .
-		[(20120708)
+		[(20120710)
 		 nil "A low contrast color theme for Emacs. [source: github]" single])
  (zen-and-art-theme .
 		    [(20120622)
@@ -39,7 +39,7 @@
 	    [(20120707)
 	     nil "Emacs WebSocket client [source: github]" single])
  (w3m .
-      [(20120702)
+      [(20120711)
        nil "an Emacs interface to w3m [source: github]" tar])
  (volatile-highlights .
 		      [(20120215)
@@ -390,6 +390,9 @@
 	     ((prelude-programming
 	       (1 0 0)))
 	     "Emacs Prelude: cc-mode configuration. [source: github]" single])
+ (powershell-mode .
+		  [(20100203)
+		   nil "Mode for editing Powershell scripts [source: svn]" single])
  (powershell .
 	     [(20120709)
 	      nil "run powershell as an inferior shell in emacs [source: wiki]" single])
@@ -429,7 +432,7 @@
 	  [(20110508)
 	   nil "minor mode for editing parentheses [source: darcs]" single])
  (pandoc-mode .
-	      [(20120412)
+	      [(20120711)
 	       nil "Minor mode for interacting with Pandoc [source: github]" tar])
  (package-spec .
 	       [(20120403)
@@ -541,6 +544,9 @@
  (latex-pretty-symbols .
 		       [(20111011)
 			nil "Display many latex symbols as their unicode counterparts [source: hg]" single])
+ (jump-char .
+	    [(20120317)
+	     nil "navigation by char [source: github]" single])
  (jump .
        [(20120702)
 	((findr
@@ -611,7 +617,7 @@
 		      [(20110817)
 		       nil "highlight the word the point is on [source: github]" single])
  (icicles .
-	  [(20120708)
+	  [(20120711)
 	   nil "Minibuffer input completion and cycling. [source: wiki]" tar])
  (ibuffer-vc .
 	     [(20111221)
@@ -658,7 +664,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [source: github]" single])
  (helm .
-       [(20120709)
+       [(20120711)
 	nil "Helm is an Emacs incremental and narrowing framework [source: github]" tar])
  (haskell-mode .
 	       [(20120704)
@@ -794,7 +800,7 @@
 	 [(20120612)
 	  nil "No description available. [source: github]" tar])
  (ergoemacs-keybindings .
-			[(20120617)
+			[(20120710)
 			 nil "No description available. [source: svn]" tar])
  (enclose .
 	  [(20120618)
@@ -817,7 +823,7 @@
 	[(20120118)
 	 nil "running leiningen commands from emacs [source: github]" single])
  (ein .
-      [(20120708)
+      [(20120710)
        ((websocket
 	 (0 9)))
        "Emacs IPython Notebook [source: github]" tar])
@@ -840,13 +846,13 @@
        [(20081128)
 	nil "simplified find-file, revert-file, save-buffer interface [source: wiki]" single])
  (dired+ .
-	 [(20120709)
+	 [(20120710)
 	  nil "Extensions to Dired. [source: wiki]" single])
  (diminish .
 	   [(20091203)
 	    nil "Diminished modes are minor modes with no modeline display [source: github]" single])
  (diff-hl .
-	  [(20120708)
+	  [(20120711)
 	   nil "VC diff fringe highlighting [source: github]" single])
  (delim-kill .
 	     [(20100517)
@@ -876,7 +882,7 @@
 	     [(20110624)
 	      nil "Perl code editing commands for Emacs [source: github]" single])
  (color-theme-solarized .
-			[(20120624)
+			[(20120626)
 			 ((color-theme
 			   (6 5 5)))
 			 "Solarized themes for Emacs [source: github]" tar])

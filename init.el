@@ -29,3 +29,6 @@
 
 (setenv "SHELL" "/bin/bash")
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
+;; maximize the frame on startup
+(add-hook 'window-setup-hook 'maximize-frame t)
