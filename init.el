@@ -15,6 +15,9 @@
 ;; custom functions
 (load "yipstar/defuns")
 
+;; aliases
+(load "yipstar/aliases")
+
 ;; color theme
 (load "yipstar/theme")
 
