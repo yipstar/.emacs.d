@@ -24,3 +24,9 @@
                       :width  'normal
                       :height (* 10 size))
   (frame-parameter nil 'font))
+
+(defun yipstar-indent-buffer ()
+  "Indent the entire buffer"
+  (interactive
+   (indent-region (point-min) (point-max))))
+   
