@@ -39,7 +39,7 @@
 	    [(20120707)
 	     nil "Emacs WebSocket client [source: github]" single])
  (w3m .
-      [(20120711)
+      [(20120712)
        nil "an Emacs interface to w3m [source: github]" tar])
  (volatile-highlights .
 		      [(20120215)
@@ -664,7 +664,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [source: github]" single])
  (helm .
-       [(20120711)
+       [(20120712)
 	nil "Helm is an Emacs incremental and narrowing framework [source: github]" tar])
  (haskell-mode .
 	       [(20120704)
@@ -777,7 +777,7 @@
 		[(20120705)
 		 nil "Increase selected region by semantic units. [source: github]" tar])
  (evil-numbers .
-	       [(20111001)
+	       [(20120712)
 		nil "increment/decrement numbers like in vim [source: github]" single])
  (evil-leader .
 	      [(20111001)

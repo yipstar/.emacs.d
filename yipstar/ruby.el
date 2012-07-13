@@ -28,3 +28,10 @@
 ;; rvm
 (require 'rvm-autoloads)
 (rvm-use-default)
+
+;; yari
+(require 'yari-autoloads)
+
+;; subword-mode
+(add-hook 'ruby-mode-hook (lambda () (subword-mode t)))
+
