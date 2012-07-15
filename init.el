@@ -12,6 +12,9 @@
 ;; my global customizations
 (load "yipstar/global")
 
+;; disable annoying prompts
+(load "yipstar/prompt")
+
 ;; custom functions
 (load "yipstar/defuns")
 
