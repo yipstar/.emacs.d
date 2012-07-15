@@ -7,3 +7,6 @@
 ;; scss
 (require 'scss-mode-autoloads)
 
+;; textmate
+(require 'textmate-autoloads)
+(textmate-mode)

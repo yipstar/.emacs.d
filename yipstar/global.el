@@ -1,5 +1,6 @@
-;; Setup meta and ctrl
+;; Setup meta, alt, and ctrl
 (setq ns-command-modifier (quote meta))
+(setq ns-alternate-modifier (quote super))
 (setq ns-control-modifier (quote control))
 
 ;; Get rid of the Toolbar, the Menubar, and the Scrollbar.
