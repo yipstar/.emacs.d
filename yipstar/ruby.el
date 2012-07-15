@@ -34,4 +34,3 @@
 
 ;; subword-mode
 (add-hook 'ruby-mode-hook (lambda () (subword-mode t)))
-

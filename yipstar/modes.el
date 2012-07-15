@@ -10,3 +10,6 @@
 ;; textmate
 (require 'textmate-autoloads)
 (textmate-mode)
+
+;; flymake
+(load "yipstar/flymake")
