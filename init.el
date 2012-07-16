@@ -33,6 +33,9 @@
 ;; bindings
 (load "yipstar/bindings")
 
+;; irc
+(load "yipstar/irc")
+
 (setenv "SHELL" "/bin/bash")
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 

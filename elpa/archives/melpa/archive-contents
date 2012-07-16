@@ -12,7 +12,7 @@
 		    [(20120622)
 		     nil "zen and art color theme for GNU Emacs 24 [source: github]" single])
  (yasnippet .
-	    [(20120713)
+	    [(20120716)
 	     nil "Yet another snippet extension for Emacs. [source: github]" tar])
  (yari .
        [(20110417)
@@ -36,7 +36,7 @@
 	[(20120706)
 	 nil "Writable grep buffer and apply the changes to files [source: github]" tar])
  (websocket .
-	    [(20120714)
+	    [(20120715)
 	     nil "Emacs WebSocket client [source: github]" single])
  (w3m .
       [(20120713)
@@ -397,8 +397,8 @@
 	     [(20120709)
 	      nil "run powershell as an inferior shell in emacs [source: wiki]" single])
  (powerline .
-	    [(20120709)
-	     nil "fancy statusline [source: wiki]" single])
+	    [(20120716)
+	     nil "Rewrite of Powerline [source: github]" single])
  (popwin .
 	 [(20120707)
 	  nil "Popup Window Manager. [source: github]" single])
@@ -631,9 +631,6 @@
  (hippie-expand-slime .
 		      [(20111115)
 		       nil "Hook slime's completion into hippie-expand [source: github]" single])
- (highline .
-	   [(20120706)
-	    nil "Rewrite of Powerline [source: github]" single])
  (highlight-symbol .
 		   [(20090413)
 		    nil "automatic and manual symbol highlighting [source: github]" single])
@@ -650,6 +647,11 @@
 		    (projectile
 		     (0 6)))
 		   "Helm integration for Projectile [source: github]" single])
+ (helm-gtags .
+	     [(20120716)
+	      ((helm
+		(1 0)))
+	      "GNU GLOBAL helm interface [source: github]" single])
  (helm-git .
 	   [(20120629)
 	    nil "Helm extension for Git. [source: github]" single])
@@ -661,7 +663,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [source: github]" single])
  (helm .
-       [(20120714)
+       [(20120716)
 	nil "Helm is an Emacs incremental and narrowing framework [source: github]" tar])
  (haskell-mode .
 	       [(20120704)
@@ -762,7 +764,7 @@
 	[(20120124)
 	 nil "Breadth-first file-finding facility for (X)Emacs [source: github]" single])
  (find-file-in-project .
-		       [(20110903)
+		       [(20120715)
 			nil "Find files in a project quickly. [source: github]" single])
  (fill-column-indicator .
 			[(20120715)
@@ -820,7 +822,7 @@
 	[(20120118)
 	 nil "running leiningen commands from emacs [source: github]" single])
  (ein .
-      [(20120714)
+      [(20120715)
        ((websocket
 	 (0 9)))
        "Emacs IPython Notebook [source: github]" tar])

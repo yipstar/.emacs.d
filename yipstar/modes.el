@@ -13,3 +13,6 @@
 
 ;; flymake
 (load "yipstar/flymake")
+
+;; twittering
+(require 'twittering-mode-autoloads)

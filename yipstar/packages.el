@@ -20,7 +20,8 @@
 
 (defvar yipstar-packages
   '(ack-and-a-half twilight-theme zenburn-theme rinari switch-window scss-mode js2-mode window-layout e2wm
-		   maxframe rvm yari textmate flymake-cursor flymake-ruby flymake-jslint)
+		   maxframe rvm yari textmate flymake-cursor flymake-ruby flymake-jslint 
+		   twittering-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun yipstar-packages-installed-p ()
