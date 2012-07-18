@@ -7,7 +7,7 @@
  '(custom-safe-themes (quote ("6cfe5b2f818c7b52723f3e121d1157cf9d95ed8923dbc1b47f392da80ef7495d" "71b172ea4aad108801421cc5251edb6c792f3adbaecfa1c52e94e3d99634dee7" default)))
  '(fci-rule-color "#383838")
  '(flymake-jslint-command "/usr/local/bin/jslint")
- '(scss-compile-at-save t))
+ '(scss-compile-at-save nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

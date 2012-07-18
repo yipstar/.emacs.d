@@ -16,3 +16,6 @@
 
 ;; twittering
 (require 'twittering-mode-autoloads)
+
+;; electrir-pair-mode for completing quotes, etc
+(electric-pair-mode t)
