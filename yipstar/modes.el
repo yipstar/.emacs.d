@@ -31,3 +31,6 @@
 
 ;; yaml-mode
 (require 'yaml-mode-autoloads)
+
+;; magit
+(require 'magit-autoloads)
