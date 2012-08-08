@@ -32,5 +32,10 @@
 ;; yari
 (require 'yari-autoloads)
 
+(add-to-list 'load-path "~/.emacs.d/vendor/snowyote-ruby-electric-a250b30")
+(require 'ruby-electric)
+
 ;; subword-mode
-(add-hook 'ruby-mode-hook (lambda () (subword-mode t)))
+(add-hook 'ruby-mode-hook (lambda () 
+			    (subword-mode t)
+			    (ruby-electric-mode t)))
