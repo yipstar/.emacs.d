@@ -37,3 +37,9 @@
   "Align region to equal signs"
    (interactive "r")
    (align-regexp begin end "\\(\\s-*\\)=" 1 1 ))
+
+(defvar ys-run-test-file)
+(setq ys-run-test-file "test/integration/broker_trader_end_to_end_test.rb")
+(setq compile-command (concat "ruby -I test " ys-run-test-file))
+
+
