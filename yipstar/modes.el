@@ -34,3 +34,9 @@
 
 ;; magit
 (require 'magit-autoloads)
+
+;; csv
+(require 'csv-mode-autoloads)
+;; (autoload 'csv-mode "csv-mode"
+;;   "Major mode for editing comma-separated value files." t)
+;; (require 'csv-mode)

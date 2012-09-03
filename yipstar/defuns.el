@@ -9,6 +9,9 @@
    (format "%s -f %s/TAGS -e -R %s" yipstar-path-to-ctags dir-name (directory-file-name dir-name)))
   )
 
+;; TODO: make a standard rails project ctags command, the above tags every directory
+;; /opt/local/bin/ctags -f TAGS -e -R app config jobs/ lib/ spec/ test/ vendor/
+
 ;; for setting fonts on a mac.
 ;; TODO: the interactive pathway is broken, fix it.
 (defun yipstar-set-mac-font (name size)
