@@ -4,4 +4,4 @@
 
 (global-set-key "\C-xg" 'magit-status)
 
-(global-set-key "\C-t" 'compile)
+(global-set-key "\C-t" 'ys-run-test)

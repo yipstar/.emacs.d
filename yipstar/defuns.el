@@ -42,4 +42,13 @@
 (setq ys-run-test-file "test/integration/broker_trader_end_to_end_test.rb")
 (setq compile-command (concat "ruby -I test " ys-run-test-file))
 
+(defun ys-run-test ()
+  (interactive)
+  (setq compile-command (concat "turn -I test " ys-run-test-file))
+  (compile compile-command)
+  )
+
+ys-run-test-file
+compile-command
+
 
