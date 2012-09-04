@@ -44,6 +44,7 @@
 
 (defun ys-run-test ()
   (interactive)
+  (cd (textmate-project-root))
   (setq compile-command (concat "turn -I test " ys-run-test-file))
   (compile compile-command)
   )
