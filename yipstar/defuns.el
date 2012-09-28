@@ -38,6 +38,9 @@
    (interactive "r")
    (align-regexp begin end "\\(\\s-*\\)=" 1 1 ))
 
+(defvar ys-run-test-command)
+(setq ys-run-test-command "turn")
+
 (defvar ys-run-test-file)
 (setq ys-run-test-file "test/integration/broker_trader_end_to_end_test.rb")
 (setq compile-command (concat "ruby -I test " ys-run-test-file))
@@ -45,11 +48,8 @@
 (defun ys-run-test ()
   (interactive)
   (cd (textmate-project-root))
-  (setq compile-command (concat "turn -I test " ys-run-test-file))
+  (setq compile-command (concat ys-run-test-command (concat " -I test " ys-run-test-file)))
   (compile compile-command)
   )
-
-ys-run-test-file
-compile-command
 
 
