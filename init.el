@@ -44,3 +44,4 @@
 
 ;; maximize the frame on startup
 (add-hook 'window-setup-hook 'maximize-frame t)
+(put 'set-goal-column 'disabled nil)
