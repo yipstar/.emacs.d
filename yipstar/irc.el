@@ -5,8 +5,8 @@
 ;; autojoin these channels
 (erc-autojoin-mode 1)
 (setq erc-autojoin-channels-alist
-      '(("freenode.net" "#emacs" "#nyc.rb" "#ruby-osx"
-	  "#rubinius" "#macdev" "#iphonedev" "#sproutcore" "#emberjs" "#documentcloud" "#meteor")
+      '(("freenode.net" "#emacs" "#nyc.rb"
+	  "#rubinius" "#macdev" "#iphonedev" "#emberjs" "#documentcloud")
 	))
 
 ;; my erc-connect macro
