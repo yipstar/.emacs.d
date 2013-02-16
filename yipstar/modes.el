@@ -65,3 +65,7 @@
   )
 
 (add-hook 'coffee-mode-hook 'coffee-custom)
+
+
+;; osx/xcode c++ files
+(add-to-list 'auto-mode-alist '("\\.mm\\'" . c++-mode))
