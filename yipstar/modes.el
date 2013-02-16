@@ -66,6 +66,8 @@
 
 (add-hook 'coffee-mode-hook 'coffee-custom)
 
-
 ;; osx/xcode c++ files
 (add-to-list 'auto-mode-alist '("\\.mm\\'" . c++-mode))
+(defun my-c++-mode-hook ()
+  (setq c-basic-offset 4))
+(add-hook 'c++-mode-hook 'my-c++-mode-hook)
