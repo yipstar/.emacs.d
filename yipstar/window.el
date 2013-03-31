@@ -56,6 +56,11 @@
 
 (global-set-key "\C-c\C-i" '3by2mod4-window-view)
 
+;; Goto previous window
+(global-set-key (kbd "C-x O") (lambda ()
+                                (interactive)
+                                (other-window -1)))
+
 ;; Rip off Gary Bernhardts dedicated special window
 ; GRB: open temporary buffers in a dedicated window split
 ;; (setq special-display-regexps
