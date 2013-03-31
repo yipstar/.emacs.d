@@ -14,3 +14,5 @@
 
 (global-set-key "\C-h" 'delete-backward-char)
 (global-set-key "\M-h" 'backward-kill-word)
+
+(global-set-key (kbd "C-c k") 'ys-kill-other-buffers)

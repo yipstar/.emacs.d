@@ -32,11 +32,11 @@
   "Indent the entire buffer"
   (interactive
    (indent-region (point-min) (point-max))))
-   
+
 (defun ys-align-to-equals (begin end)
   "Align region to equal signs"
-   (interactive "r")
-   (align-regexp begin end "\\(\\s-*\\)=" 1 1 ))
+  (interactive "r")
+  (align-regexp begin end "\\(\\s-*\\)=" 1 1 ))
 
 (defvar ys-run-test-command)
 (setq ys-run-test-command "turn")
@@ -67,4 +67,12 @@
   (interactive)
   (cd (textmate-project-root))
   (compile ys-run-deploy-command)
-)
+  )
+
+(defun ys-kill-other-buffers ()
+  "Kill all buffers but the current one.
+Don't mess with special buffers."
+  (interactive)
+  (dolist (buffer (buffer-list))
+    (unless (or (eql buffer (current-buffer)) (not (buffer-file-name buffer)))
+      (kill-buffer buffer))))
