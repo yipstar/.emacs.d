@@ -18,6 +18,9 @@
 (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . eruby-nxhtml-mumamo-mode))
 
+;; TODO: doesn't work to fix warnings, grrr
+;; (eval-after-load 'nxhtml '(nxhtml-toggle-visible-warnings))
+
 ;; ruby
 (setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Gemfile" . ruby-mode) auto-mode-alist))

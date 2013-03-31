@@ -38,3 +38,7 @@
 
 ;; Turn off auto-save. I hate #foo# files
 (setq auto-save-default nil)
+
+;; Turn off nxhtml-warnings until I figure out how to disable warnings from
+;; being visible.
+(eval-after-load 'nxhtml '(nxhtml-toggle-visible-warnings))

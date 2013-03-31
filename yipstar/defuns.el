@@ -1,7 +1,7 @@
 ;; Create an emacs TAGS file, requires the project root
 ;; http://www.emacswiki.org/emacs/BuildTags
 
-(setq yipstar-path-to-ctags "/opt/local/bin/ctags")
+(setq yipstar-path-to-ctags "/usr/local/bin/ctags")
 (defun yipstar-create-tags (dir-name)
   "Create tags file."
   (interactive "DDirectory: ")
@@ -42,7 +42,7 @@
 (setq ys-run-test-command "turn")
 
 (defvar ys-run-test-file)
-(setq ys-run-test-file "test/integration/broker_trader_end_to_end_test.rb")
+(setq ys-run-test-file "portfolio.rb")
 (setq compile-command (concat "ruby -I test " ys-run-test-file))
 
 (defun ys-run-test ()
@@ -53,3 +53,18 @@
   )
 
 
+(defun ys-run-rake ()
+  (interactive)
+  (cd (textmate-project-root))
+  (setq compile-command "rake test:lockdown")
+  (compile compile-command)
+  )
+
+(defvar ys-run-deploy-command)
+(setq ys-run-deploy-command "./script/deploy.sh")
+
+(defun ys-run-deploy ()
+  (interactive)
+  (cd (textmate-project-root))
+  (compile ys-run-deploy-command)
+)
