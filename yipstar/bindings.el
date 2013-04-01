@@ -16,3 +16,5 @@
 (global-set-key "\M-h" 'backward-kill-word)
 
 (global-set-key (kbd "C-c k") 'ys-kill-other-buffers)
+
+(global-set-key (kbd "C-c c") 'compile)

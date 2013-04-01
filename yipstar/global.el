@@ -42,3 +42,6 @@
 ;; Turn off nxhtml-warnings until I figure out how to disable warnings from
 ;; being visible.
 (eval-after-load 'nxhtml '(nxhtml-toggle-visible-warnings))
+
+;; compile without prompting for command
+(setq compilation-read-command nil)
