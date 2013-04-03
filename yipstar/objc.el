@@ -9,6 +9,10 @@
                                           magic-mode-regexp-match-limit t)))
                . objc-mode))
 
+;; make ff-find-other-file to work with .m and .mm files
+(require 'find-file) ;; for the "cc-other-file-alist" variable
+(nconc (cadr (assoc "\\.h\\'" cc-other-file-alist)) '(".m" ".mm"))
+
 ;; osx/xcode c++ files
 (add-to-list 'auto-mode-alist '("\\.mm\\'" . c++-mode))
 (defun my-c++-mode-hook ()
