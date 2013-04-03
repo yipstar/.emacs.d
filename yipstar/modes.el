@@ -3,6 +3,7 @@
 
 (load "yipstar/ruby")
 (load "yipstar/javascript")
+(load "yipstar/objc")
 
 ;; scss
 (require 'scss-mode-autoloads)
@@ -20,14 +21,6 @@
 
 ;; electrir-pair-mode for completing quotes, etc
 (electric-pair-mode t)
-
-;; objc-mode
-(add-hook 'objc-mode-hook (lambda () (subword-mode t)))
-
-;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/vendor/senny-emacs-xcode/"))
-;; (require 'xcode)
-
-(load "yipstar/xcodebuild")
 
 ;; yaml-mode
 (require 'yaml-mode-autoloads)
@@ -65,9 +58,3 @@
   )
 
 (add-hook 'coffee-mode-hook 'coffee-custom)
-
-;; osx/xcode c++ files
-(add-to-list 'auto-mode-alist '("\\.mm\\'" . c++-mode))
-(defun my-c++-mode-hook ()
-  (setq c-basic-offset 4))
-(add-hook 'c++-mode-hook 'my-c++-mode-hook)
