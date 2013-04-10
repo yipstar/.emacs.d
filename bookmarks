@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("LKAppDelegate.m"
+ (filename . "~/projects/bunky_iphone_app/LocalKnowledge/LocalKnowledge/LKAppDelegate.m")
+ (front-context-string . "MapViewControlle")
+ (rear-context-string . "wController = [[")
+ (position . 1365))
+("LocalKnowledgeAPIClient.m"
+ (filename . "~/projects/bunky_iphone_app/LocalKnowledge/LocalKnowledge/Classes/LocalKnowledgeAPIClient.m")
+ (front-context-string . "    NSMutableDic")
+ (rear-context-string . "e *)response \n{\n")
+ (position . 1294))
+)
