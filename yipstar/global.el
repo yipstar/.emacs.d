@@ -45,3 +45,6 @@
 
 ;; compile without prompting for command
 (setq compilation-read-command nil)
+
+;; save bookmarks immediately
+(setq bookmark-save-flag 1)
