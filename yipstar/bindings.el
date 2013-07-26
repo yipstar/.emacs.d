@@ -6,8 +6,6 @@
 
 (global-set-key "\C-t" 'ys-run-test)
 
-(global-set-key "\C-t" 'xcodebuild-compile)
-
 (global-set-key "\C-xp" 'objc-headline)
 
 ;;(global-set-key "\C-t" 'ys-run-rake)
@@ -22,7 +20,8 @@
 
 (global-set-key (kbd "C-c k") 'ys-kill-other-buffers)
 
-(global-set-key (kbd "C-c c") 'compile)
+;; (global-set-key (kbd "C-c c") 'compile)
+(global-set-key (kbd "C-c c") 'xcodebuild-compile)
 
 ; c-mode and derivatives
 
