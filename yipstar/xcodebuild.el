@@ -1,3 +1,5 @@
+;; http://roupam.github.com/
+
 (require 'cl)
 ;; for common lisp macros, is this necessary?
 
@@ -23,9 +25,10 @@
 (defun xcodebuild-compile ()
   (interactive)
 
-  (xcodebuild-set-current-directory-to-project-root)
+  (cd (textmate-project-root))
+  ;; (xcodebuild-set-current-directory-to-project-root)
 
-  (setq xcodebuild-command "xcodebuild")
+  (setq xcodebuild-command "xcodebuild ONLY_ACTIVE_ARCH=NO -workspace LocalKnowledge.xcworkspace -scheme LocalKnowledge")
   
   (if (not (boundp 'xcodebuild-configuration))
       (setq xcodebuild-configuration "Debug"))
@@ -46,7 +49,8 @@
 
 (defun xcodebuild-run ()
   (interactive)
-  (xcodebuild-set-current-directory-to-project-root)
+  (cd (textmate-project-root))
+  ;; (xcodebuild-set-current-directory-to-project-root)
   (if (xcodebuild-is-iphone-project-p)
       (xcodebuild-run-in-iphone-simulator)
     (xcodebuild-run-macosx)
@@ -225,7 +229,8 @@
 
 (defun xcodebuild-load-sdks-alist ()
   (interactive)
-  (xcodebuild-set-current-directory-to-project-root)
+  (cd (textmate-project-root))
+  ;; (xcodebuild-set-current-directory-to-project-root)
   (setq xcodebuild-sdks-alist nil)
   (let ((sdk-lines (split-string (shell-command-to-string "xcodebuild -showsdks") "\n")))
     (dolist (line sdk-lines)
@@ -240,7 +245,8 @@
 
 (defun xcodebuild-list-targets ()
   (interactive)
-  (xcodebuild-set-current-directory-to-project-root)
+  (cd (textmate-project-root))
+  ;; (xcodebuild-set-current-directory-to-project-root)
   (let ((result (shell-command-to-string "xcodebuild -list")))
     (message result)))
 
@@ -266,4 +272,5 @@
 (defun xcodebuild-clear-iphone-simulator-applications-directory()
   (interactive)
   (shell-command (concat "rm -rf " (expand-file-name "~/Library/Application Support/iPhone Simulator/User/Applications/*"))))
+  
 
