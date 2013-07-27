@@ -22,7 +22,8 @@
   '(ack-and-a-half twilight-theme zenburn-theme rinari switch-window scss-mode js2-mode window-layout e2wm
 		   maxframe rvm yari textmate flymake-cursor flymake-ruby flymake-jslint 
 		   twittering-mode yaml-mode magit csv-mode github-theme solarized-theme color-theme-sanityinc-tomorrow
-                   ess exec-path-from-shell w3m anything anything-config clojure-mode)
+                   ess exec-path-from-shell w3m anything anything-config 
+                   clojure-mode dash)
   "A list of packages to ensure are installed at launch.")
 
 (defun yipstar-packages-installed-p ()

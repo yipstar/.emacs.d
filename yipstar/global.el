@@ -48,3 +48,7 @@
 
 ;; save bookmarks immediately
 (setq bookmark-save-flag 1)
+
+;; use dash
+(require 'dash-autoloads)
+(require 'dash)
