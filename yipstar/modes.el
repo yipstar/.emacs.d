@@ -4,6 +4,7 @@
 (load "yipstar/ruby")
 (load "yipstar/javascript")
 (load "yipstar/objc")
+(load "yipstar/clojure")
 
 ;; scss
 (require 'scss-mode-autoloads)
