@@ -52,3 +52,6 @@
 ;; use dash
 (require 'dash-autoloads)
 (require 'dash)
+
+;; show column numbers in mode line
+(column-number-mode t)
