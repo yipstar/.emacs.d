@@ -1,5 +1,8 @@
 ;; setup package manager
 (require 'package)
+
+;; only use the gnu elpa archive, comment out marmalade and melpa
+
 (add-to-list 'package-archives
              '("marmalade" . 
                "http://marmalade-repo.org/packages/") t)
@@ -18,12 +21,18 @@
 ;;                    rainbow-mode volatile-highlights yasnippet zenburn-theme)
 ;;   "A list of packages to ensure are installed at launch.")
 
+;; clojure-test-mode
+
 (defvar yipstar-packages
   '(ack-and-a-half twilight-theme zenburn-theme rinari switch-window scss-mode js2-mode window-layout e2wm
 		   maxframe rvm yari textmate flymake-cursor flymake-ruby flymake-jslint 
 		   twittering-mode yaml-mode magit csv-mode github-theme solarized-theme color-theme-sanityinc-tomorrow
                    ess exec-path-from-shell w3m anything anything-config 
-                   clojure-mode dash paredit)
+                   clojure-mode dash paredit nrepl
+                   highlight-80+)
+
+;; cider, not working back to nrepl
+
   "A list of packages to ensure are installed at launch.")
 
 (defun yipstar-packages-installed-p ()

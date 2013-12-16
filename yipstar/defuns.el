@@ -39,16 +39,18 @@
   (align-regexp begin end "\\(\\s-*\\)=" 1 1 ))
 
 (defvar ys-run-test-command)
-(setq ys-run-test-command "turn")
+(setq ys-run-test-command "ruby")
 
 (defvar ys-run-test-file)
 (setq ys-run-test-file "portfolio.rb")
 (setq compile-command (concat "ruby -I test " ys-run-test-file))
 
+;; TODO: refactor test stuff to be language agnostic and work with lein test
 (defun ys-run-test ()
   (interactive)
   (cd (textmate-project-root))
-  (setq compile-command (concat ys-run-test-command (concat " -I test " ys-run-test-file)))
+  ;; (setq compile-command (concat ys-run-test-command (concat " -I test " ys-run-test-file)))
+  (setq compile-command ys-run-test-command)
   (compile compile-command)
   )
 
