@@ -27,7 +27,7 @@
 (require 'yaml-mode-autoloads)
 
 ;; magit
-(require 'magit-autoloads)
+;; (require 'magit-autoloads)
 
 ;; csv
 (require 'csv-mode-autoloads)

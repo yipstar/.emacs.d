@@ -7,9 +7,9 @@
              '("marmalade" . 
                "http://marmalade-repo.org/packages/") t)
 
-;; (add-to-list 'package-archives
-;;              '("melpa" . 
-;;                "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("melpa" . 
+               "http://melpa.milkbox.net/packages/") t)
 
 (package-initialize)
 
@@ -29,11 +29,13 @@
 		   twittering-mode yaml-mode magit csv-mode github-theme solarized-theme color-theme-sanityinc-tomorrow
                    ess exec-path-from-shell w3m anything anything-config 
                    clojure-mode dash paredit nrepl
-                   highlight-80+)
+		   php-mode swift-mode handlebars-mode))
+
+  ;; highlight-80+
 
 ;; cider, not working back to nrepl
 
-  "A list of packages to ensure are installed at launch.")
+;;  "A list of packages to ensure are installed at launch.")
 
 (defun yipstar-packages-installed-p ()
   (loop for p in yipstar-packages
