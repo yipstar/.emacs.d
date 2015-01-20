@@ -1,15 +1,23 @@
+;; TODO: if package fails because of signing issues use:
+;; (setq package-check-signature nil)
+;; figure out why?
+
 ;; setup package manager
 (require 'package)
 
 ;; only use the gnu elpa archive, comment out marmalade and melpa
 
-(add-to-list 'package-archives
-             '("marmalade" . 
-               "http://marmalade-repo.org/packages/") t)
+;; (add-to-list 'package-archives
+;;              '("marmalade" . 
+;;                "http://marmalade-repo.org/packages/") t)
+
+;; (add-to-list 'package-archives
+;;              '("melpa" . 
+;;                "http://melpa.milkbox.net/packages/") t)
 
 (add-to-list 'package-archives
-             '("melpa" . 
-               "http://melpa.milkbox.net/packages/") t)
+             '("melpa-stable" . 
+               "http://stable.melpa.org/packages/") t)
 
 (package-initialize)
 
@@ -28,8 +36,8 @@
 		   maxframe rvm yari textmate flymake-cursor flymake-ruby flymake-jslint 
 		   twittering-mode yaml-mode magit csv-mode github-theme solarized-theme color-theme-sanityinc-tomorrow
                    ess exec-path-from-shell w3m anything anything-config 
-                   clojure-mode dash paredit nrepl
-		   php-mode swift-mode handlebars-mode))
+                   clojure-mode dash paredit cider
+		   php-mode swift-mode handlebars-mode ace-jump-mode))
 
   ;; highlight-80+
 

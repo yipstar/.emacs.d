@@ -1,16 +1,18 @@
 Provides font-lock, indentation, and navigation for the Clojure
-language. (http://clojure.org)
+programming language (http://clojure.org).
 
-Users of older Emacs (pre-22) should get version 1.4:
-http://github.com/technomancy/clojure-mode/tree/1.4
+Using clojure-mode with paredit or smartparens is highly recommended.
 
-Slime integration has been removed; see the 1.x releases if you need it.
-
-Using clojure-mode with paredit is highly recommended. Use paredit
-as you would with any other minor mode; for instance:
+Here are some example configurations:
 
   ;; require or autoload paredit-mode
   (add-hook 'clojure-mode-hook 'paredit-mode)
 
-See nREPL.el (http://github.com/kingtim/nrepl.el) for
+  ;; require or autoload smartparens
+  (add-hook 'clojure-mode-hook 'smartparens-strict-mode)
+
+See inf-clojure (http://github.com/clojure-emacs/inf-clojure) for
+basic interaction with Clojure subprocesses.
+
+See CIDER (http://github.com/clojure-emacs/cider) for
 better interaction with subprocesses via nREPL.
