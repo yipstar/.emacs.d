@@ -1,6 +1,3 @@
-;; ido
-(ido-mode t)
-
 (load "yipstar/ruby")
 (load "yipstar/javascript")
 (load "yipstar/objc")

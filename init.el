@@ -39,6 +39,9 @@
 ;; shell setup
 (load "yipstar/shell")
 
+;; navigation customizations
+(load "yipstar/navigation")
+
 (setenv "SHELL" "/bin/bash")
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 

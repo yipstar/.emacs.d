@@ -37,13 +37,13 @@
 		   twittering-mode yaml-mode magit csv-mode github-theme solarized-theme color-theme-sanityinc-tomorrow
                    ess exec-path-from-shell w3m anything anything-config 
                    clojure-mode dash paredit cider
-		   php-mode swift-mode handlebars-mode ace-jump-mode))
+		   php-mode swift-mode handlebars-mode ace-jump-mode
+                   clojure-mode-extra-font-locking ido-ubiquitous smex projectile
+                   rainbow-delimiters
+                   ))
 
-  ;; highlight-80+
-
-;; cider, not working back to nrepl
-
-;;  "A list of packages to ensure are installed at launch.")
+;; tried but disable packages:
+;; highlight-80+
 
 (defun yipstar-packages-installed-p ()
   (loop for p in yipstar-packages

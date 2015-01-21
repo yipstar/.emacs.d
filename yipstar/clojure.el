@@ -1,43 +1,66 @@
 ;; use paredit for clojure code
-(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'clojure-mode-hook 'enable-paredit-mode)
+
+(add-hook 'clojure-mode-hook 'subword-mode)
+
+;; A little more syntax highlighting
+(require 'clojure-mode-extra-font-locking)
 
 ;; cider config
 
-;; ;; use eldoc
-;; (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+;; use eldoc
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 
-;; ;; hide nrepl buffers from switching commands
-;; (setq nrepl-hide-special-buffers t)
+;; go right to the REPL buffer when it's finished connecting
+(setq cider-repl-pop-to-buffer-on-connect t)
 
-;; ;; Prevent the auto-display of the REPL buffer 
-;; ;; in a separate window after connection is established
-;; (setq cider-repl-pop-to-buffer-on-connect nil)
+;; When there's a cider error, show its buffer and switch to it
+(setq cider-show-error-buffer t)
+(setq cider-auto-select-error-buffer t)
 
-;; ;; Stop the error buffer from popping up while working in 
-;; ;; buffers other than the REPL
-;; (setq cider-popup-stacktraces nil)
+;; Where to store the cider history.
+(setq cider-repl-history-file "~/.emacs.d/cider-history")
 
-;; ;; Enable error buffer popping also in the REPL
-;; (setq cider-repl-popup-stacktraces t)
+;; Wrap when navigating history.
+(setq cider-repl-wrap-history t)
 
-;; ;; To auto-select the error buffer when it's displayed
-;; (setq cider-auto-select-error-buffer t)
+;; enable paredit in your REPL
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
 
-;; ;; Make C-c C-z switch to the CIDER REPL buffer in the current window
-;; (setq cider-repl-display-in-current-window t)
+;; enable camelcase editing in repl
+(add-hook 'cider-repl-mode-hook 'subword-mode)
 
-;; ;; Make the REPL history wrap around when its end is reached
-;; (setq cider-repl-wrap-history t)
+;; use rainbow delimiters in repl
+(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 
-;; ;; adjust the maximum number of items kept in the REPL history
-;; (setq cider-repl-history-size 1000) ; the default is 500
+;; Use clojure mode for other extensions
+(add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
 
-;; ;; enable camelcase editing in repl
-;; (add-hook 'cider-repl-mode-hook 'subword-mode)
+;; key bindings
+;; these help me out with the way I usually develop web apps
+(defun cider-start-http-server ()
+  (interactive)
+  (cider-load-current-buffer)
+  (let ((ns (cider-current-ns)))
+    (cider-repl-set-ns ns)
+    (cider-interactive-eval (format "(println '(def server (%s/start))) (println 'server)" ns))
+    (cider-interactive-eval (format "(def server (%s/start)) (println server)" ns))))
 
-;; ;; use paredit in repl
-;; (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
-;; ;; use rainbow delimiters in repl
-;; (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
+(defun cider-refresh ()
+  (interactive)
+  (cider-interactive-eval (format "(user/reset)")))
 
+(defun cider-user-ns ()
+  (interactive)
+  (cider-repl-set-ns "user"))
+
+(eval-after-load 'cider
+  '(progn
+     (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
+     (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
+     (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
+     (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))

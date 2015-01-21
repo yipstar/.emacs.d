@@ -1,5 +1,7 @@
-;; This keeps my PATH from bash working :)
-(exec-path-from-shell-initialize)
+;; This keeps my PATH from bash working.
+;; https://github.com/purcell/exec-path-from-shell
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;; (require 'ansi-color)
 

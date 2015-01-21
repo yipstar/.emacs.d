@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/projects/vendor/emacs_repos_to_go_through/emacs-for-clojure/")
