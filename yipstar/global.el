@@ -33,6 +33,7 @@
 ;; http://amitp.blogspot.com/2007/03/emacs-move-autosave-and-backup-files.htmlri
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
+
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 

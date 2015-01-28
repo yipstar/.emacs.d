@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/projects/vendor/emacs_repos_to_go_through/emacs-for-clojure/")
+("~/cornerstone/thefader_v3_cms/" "~/.emacs.d/" "~/cornerstone/thefader_cms_ember/" "~/projects/clojure/explore/" "~/projects/trading/ytrade/" "~/projects/vendor/emacs_repos_to_go_through/emacs-for-clojure/")

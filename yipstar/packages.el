@@ -39,7 +39,7 @@
                    clojure-mode dash paredit cider
 		   php-mode swift-mode handlebars-mode ace-jump-mode
                    clojure-mode-extra-font-locking ido-ubiquitous smex projectile
-                   rainbow-delimiters
+                   rainbow-delimiters git-timemachine
                    ))
 
 ;; tried but disable packages:

@@ -1,0 +1,23 @@
+
+;; ----- smex-history -----
+(
+ my-irc
+ shell
+ qr
+ rhtml-mode
+ rgrep
+ handlebars-mode
+ cider-jack-in
+)
+
+;; ----- smex-data -----
+(
+ (cider-jack-in . 3)
+ (cider-quit . 1)
+ (shell . 10)
+ (rgrep . 6)
+ (handlebars-mode . 1)
+ (qr . 4)
+ (rhtml-mode . 1)
+ (my-irc . 1)
+)
