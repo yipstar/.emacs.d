@@ -48,7 +48,7 @@
 (add-hook 'ruby-mode-hook (lambda () 
 			    (subword-mode t)
 			    (ruby-electric-mode t)
-                            (highlight-80+-mode)))
+                            ))
 
 ;; don't insert # -*- coding: utf-8 -*- at top of files!
 (setq ruby-insert-encoding-magic-comment nil)
