@@ -16,8 +16,11 @@
 ;;                "http://melpa.milkbox.net/packages/") t)
 
 (add-to-list 'package-archives
-             '("melpa-stable" . 
-               "http://stable.melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
+
+;; (add-to-list 'package-archives
+;;              '("melpa-stable" . 
+;;                "http://stable.melpa.org/packages/") t)
 
 (package-initialize)
 
@@ -32,7 +35,7 @@
 ;; clojure-test-mode
 
 (defvar yipstar-packages
-  '(ack-and-a-half twilight-theme zenburn-theme rinari switch-window scss-mode js2-mode window-layout e2wm
+  '(ack-and-a-half rinari switch-window scss-mode js2-mode window-layout e2wm
 		   maxframe rvm yari textmate flymake-cursor flymake-ruby flymake-jslint 
 		   twittering-mode yaml-mode magit csv-mode github-theme solarized-theme color-theme-sanityinc-tomorrow
                    ess exec-path-from-shell w3m anything anything-config 
@@ -40,6 +43,7 @@
 		   php-mode swift-mode handlebars-mode ace-jump-mode
                    clojure-mode-extra-font-locking ido-ubiquitous smex projectile
                    rainbow-delimiters git-timemachine
+                   solarized-theme moe-theme twilight-theme zenburn-theme monokai-theme leuven-theme
                    ))
 
 ;; tried but disable packages:

@@ -1,23 +1,40 @@
 
 ;; ----- smex-history -----
 (
- my-irc
+ list-packages
+ package-menu-mode
+ dired
  shell
- qr
- rhtml-mode
+ package-menu-refresh
+ package-install-file
  rgrep
- handlebars-mode
- cider-jack-in
 )
 
 ;; ----- smex-data -----
 (
- (cider-jack-in . 3)
- (cider-quit . 1)
- (shell . 10)
- (rgrep . 6)
- (handlebars-mode . 1)
- (qr . 4)
- (rhtml-mode . 1)
- (my-irc . 1)
+ (cider-jack-in . 12)
+ (cider-quit . 7)
+ (shell . 90)
+ (rgrep . 145)
+ (handlebars-mode . 14)
+ (qr . 123)
+ (rhtml-mode . 17)
+ (my-irc . 6)
+ (list-packages . 6)
+ (git-timemachine . 9)
+ (kill-some-buffers . 2)
+ (make-directory . 4)
+ (revert-buffer . 3)
+ (paredit-mode . 1)
+ (rename-file . 1)
+ (python-mode . 1)
+ (c-guess-view . 1)
+ (R . 2)
+ (S . 1)
+ (qrr . 1)
+ (grep . 1)
+ (package-install-file . 1)
+ (package-menu-refresh . 1)
+ (dired . 1)
+ (package-menu-mode . 1)
 )

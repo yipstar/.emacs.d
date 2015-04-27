@@ -1,15 +1,15 @@
-(load-theme 'wombat)
-;;(load-theme 'twilight)
+;; (load-theme 'wombat)
+;; (load-theme 'twilight)
 ;; (load-theme 'zenburn)
+;; (load-theme 'anti-zenburn)
 
-(add-to-list 'custom-theme-load-path "/Users/yipstar/.emacs.d/elpa/solarized-theme-20121023.2059/")
+;; (require 'moe-theme)
+;; (moe-light)
+;; (moe-dark)
+
 ;; (load-theme 'solarized-light)
-
-(add-to-list 'custom-theme-load-path "/Users/yipstar/.emacs.d/elpa/github-theme-0.0.3/")
-;; (load-theme 'github)
-
-;; TODO: where is jw's theme?
-;; (load-theme 'jw-dark) 
+;; (load-theme 'monokai)
+(load-theme 'leuven)
 
 (yipstar-set-mac-font "Inconsolata" 16)
 
