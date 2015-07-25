@@ -44,6 +44,7 @@
                    clojure-mode-extra-font-locking ido-ubiquitous smex projectile
                    rainbow-delimiters git-timemachine
                    solarized-theme moe-theme twilight-theme zenburn-theme monokai-theme leuven-theme
+                   elixir-mode alchemist
                    ))
 
 ;; tried but disable packages:
