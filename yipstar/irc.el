@@ -6,7 +6,7 @@
 (erc-autojoin-mode 1)
 (setq erc-autojoin-channels-alist
       '(("freenode.net" "#emacs" "#nyc.rb"
-	  "#rubinius" "#emberjs" "#clojure")
+	  "#rubinius" "#emberjs" "#clojure" "#elixir-lang")
 	))
 
 ;; my erc-connect macro

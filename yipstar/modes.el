@@ -56,3 +56,7 @@
   )
 
 (add-hook 'coffee-mode-hook 'coffee-custom)
+
+;; elixir
+
+(require 'alchemist)

@@ -8,8 +8,9 @@
 ;; (moe-dark)
 
 ;; (load-theme 'solarized-light)
-;; (load-theme 'monokai)
-(load-theme 'leuven)
+;; (load-theme 'solarized-dark)
+(load-theme 'monokai)
+;; (load-theme 'leuven)
 
 (yipstar-set-mac-font "Inconsolata" 16)
 
